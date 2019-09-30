@@ -1,0 +1,116 @@
+body{
+    background:#0a0136;
+    color:#49fa03;
+    display:flex;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+}
+.container{
+    width:80%;
+    text-align:center;
+    position:relative;
+    top:-100px;
+}
+.urlbox{
+    min-width: 300px;
+    margin-left:-30px;
+}
+.urlbox .url{
+    width:70%;
+    max-width:300px;
+    height:36px;
+    border:1px solid white;
+    background:transparent;
+    border-radius:25px 0px 0px 25px;
+    padding-left:15px;
+    color:white;
+    text-align:center;
+    box-sizing:border-box;
+}
+h1{
+font-family: 'Courier New', Courier, monospace;
+font-size:8vw;
+}
+span.own{
+    color:white;
+}
+.view{
+    background:#ffffff;
+    padding:7px 25px 8px 25px;
+    color:#0a0136;
+    margin-left:-4px;
+    border-bottom:2px solid white;
+    border-top:1px solid white;
+    border-radius:0px 25px 25px 0px;
+    text-decoration:none;
+    font-weight: 700;
+}
+::-webkit-input-placeholder{
+    color:white;
+}
+.showcase{
+    margin-top:50px;
+    width:100%;
+    background:transparent;
+    max-width:500px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height:300px;
+}
+.showcase img.imageshow{
+    width:100%;
+    height:auto;
+    border-radius:5px;
+}
+.download{
+    z-index: 2;
+    color:#fff;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:linear-gradient(45deg,#420647,#cf0559);
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px 1px #0a0136;
+    border:1px solid white;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.loader{
+    width:50px;
+    height:50px;
+    position: relative;
+    bottom:-15%;
+    left:50%;
+    transform:translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+}
+.loader .bar{
+    background:#ffffff;
+    width:40px;
+    height: 50px;
+    border-radius: 50px 0px 50px 0px;
+    animation:loading 1s ease infinite;
+}
+ .loader .barcross{
+    background:#49fa03;
+    width:40px;
+    height: 50px;    
+    border-radius: 0px 50px 0px 50px;
+    animation:loading 1s infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+
+}
+
+
