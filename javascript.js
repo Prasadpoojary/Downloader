@@ -16,7 +16,6 @@ $(document).ready(function(){
         var urlname=$('.url').val();
         download.attr('href',urlname);
         var name=download.attr('href');
-        console.log(name)
     });
 
 
